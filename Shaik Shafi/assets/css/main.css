@@ -1953,6 +1953,148 @@ section,
 }
 
 /*--------------------------------------------------------------
+# Certificates Section
+--------------------------------------------------------------*/
+.certificates .cert-card {
+  background: var(--surface-color);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.certificates .cert-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+
+.certificates .cert-top-bar {
+  height: 5px;
+  background: linear-gradient(90deg, var(--accent-color), color-mix(in srgb, var(--accent-color), #fff 30%));
+}
+
+.certificates .cert-top-bar--aws {
+  background: linear-gradient(90deg, #232f3e, #ff9900);
+}
+
+.certificates .cert-body {
+  padding: 28px 26px 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.certificates .cert-seal {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--accent-color), transparent 85%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.certificates .cert-seal i {
+  font-size: 26px;
+  color: var(--accent-color);
+}
+
+.certificates .cert-seal--aws {
+  background: color-mix(in srgb, #ff9900, transparent 82%);
+}
+
+.certificates .cert-seal--aws i {
+  color: #ff9900;
+}
+
+.certificates .cert-label {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  margin-bottom: 10px;
+}
+
+.certificates .cert-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--heading-color);
+  line-height: 1.5;
+  margin-bottom: 18px;
+}
+
+.certificates .cert-divider {
+  width: 48px;
+  height: 2px;
+  background: color-mix(in srgb, var(--accent-color), transparent 60%);
+  border-radius: 2px;
+  margin: 0 auto 16px;
+}
+
+.certificates .cert-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+
+.certificates .cert-issuer-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+.certificates .cert-recipient {
+  font-size: 12px;
+  color: color-mix(in srgb, var(--default-color), transparent 35%);
+}
+
+.certificates .cert-actions {
+  display: flex;
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.certificates .cert-action-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 13px 10px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.certificates .view-btn {
+  color: var(--accent-color);
+  border-right: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.certificates .view-btn:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 90%);
+  color: var(--accent-color);
+}
+
+.certificates .download-btn {
+  color: var(--heading-color);
+}
+
+.certificates .download-btn:hover {
+  background: color-mix(in srgb, var(--default-color), transparent 93%);
+  color: var(--heading-color);
+}
+
+/*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
 .starter-section {
