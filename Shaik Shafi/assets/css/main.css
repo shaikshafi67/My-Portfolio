@@ -1278,8 +1278,46 @@ section,
 .portfolio .portfolio-card .portfolio-content p {
   font-size: 15px;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
-  margin: 0;
+  margin: 0 0 14px 0;
   line-height: 1.6;
+}
+
+.portfolio .portfolio-card .portfolio-content .portfolio-links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.portfolio .portfolio-card .portfolio-content .portfolio-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.portfolio .portfolio-card .portfolio-content .live-link {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+.portfolio .portfolio-card .portfolio-content .live-link:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  color: var(--contrast-color);
+}
+
+.portfolio .portfolio-card .portfolio-content .github-link {
+  background-color: #24292e;
+  color: #ffffff;
+}
+
+.portfolio .portfolio-card .portfolio-content .github-link:hover {
+  background-color: #3a3f44;
+  color: #ffffff;
 }
 
 @media (max-width: 768px) {
